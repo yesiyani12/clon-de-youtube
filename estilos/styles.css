@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+nav{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:10px
+}
+sup{
+    vertical-align: top;
+}
+span sup{
+    padding-top: 10px;
+    color: rgb(15, 15, 15);
+    font-weight: 100;
+}
+
+/* PROBAR COMO FUNCIONA CUANDO TENEMOS SCROLL
+sup { 
+    vertical-align: top;
+    position: relative;
+    top: 0.5em;
+}
+*/
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25vw;
+}
+ul li{
+    list-style: none;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card{
+    width: 23vw;
+    height: 250px;
+    border: 1px lightgray solid;
+    margin-top: 15px;
+}
+.card-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.imagen{
+    width: 100%;
+    height: 154px;
+
+    background-image: url("../img/autos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imagen-cuadrado{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logo{
+    width: 15%;
+    height: 38%;
+    padding-top: 13px;
+}
+
+.card-titulos{
+    padding-top: 10px;
+}
+
+.card-opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 38%;
+    width: 15%;
+}
+.card-opciones-boton{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.card-main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-opciones-boton{
+    opacity: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    cursor:pointer;
+}
+.card-opciones-boton:hover{
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    cursor:pointer;   
+}
+
+
+@media screen and (max-width: 576px){
+  
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    width: 100vw;
+    height: 250px;
+    border: 1px lightgray solid;
+    margin-top: 15px;
+}
+.ocultar{
+    display: none;
+}
+.card-opciones-boton{
+    opacity: 1;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    cursor:pointer; 
+}
+ }
